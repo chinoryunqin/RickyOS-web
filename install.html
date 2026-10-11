@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="RickyOS 安装工作台。为 MindReset Read Pico 自动检查系统、保存完整备份和校验安装结果。"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>RickyOS · 安装工作台</title>  <script type="module" crossorigin src="./assets/install-CRKUJ3LE.js"></script>
+  <script src="./assets/install-entry-guard.js?v=20261011-1"></script>
   <link rel="modulepreload" crossorigin href="./assets/site-C1I_zkCy.js">
   <link rel="modulepreload" crossorigin href="./assets/rom-GkxcFgpz.js">
   <link rel="modulepreload" crossorigin href="./assets/esp8266-nJGP_04n.js">
@@ -28,6 +29,7 @@
 <div class="notice" id="compatibility" role="status" aria-live="polite">正在检查发行状态…</div><div class="release-info"><b id="release-version">正式安装包尚未开放</b><p id="release-description">正式固件待发布。当前只开放界面预览和流程演示，不连接或刷写真实设备。</p></div>
 <div class="b-warning" id="before-start"><b id="install-path">自动检查当前系统</b><p id="install-note">检查后自动选择安装方式：已装有 CrossMux 或 RickyOS 的设备只更新应用，原厂或其他系统完整安装。网站不操作 SD 卡。</p></div>
 <label class="check-row"><input type="checkbox" id="model-confirm"><span>我确认设备是 <b>Read Pico（RDP-G01-W）</b>，并了解第三方固件的安装风险。</span></label><div class="control-row"><button id="connect" class="button blue-button" disabled>连接并检查设备 <span aria-hidden="true">→</span></button><button id="disconnect" class="button quiet" hidden>断开连接</button><a href="./install.html?demo=1" class="text-link" id="demo-link">看看流程演示</a></div>
+<p id="connection-help" class="notice" role="status" aria-live="polite" hidden></p><button id="reload-installer" class="button secondary" hidden>重新加载安全安装页面</button>
 <div id="backup-controls" class="backup-controls" hidden><label class="check-row"><input type="checkbox" id="backup-opt"><span>先备份完整 16 MB Flash（可选，约 5–10 分钟，读完自动下载）</span></label><button class="button secondary" id="backup">检查设备</button><button class="button quiet" id="cancel" hidden>取消读取</button><a class="button secondary" id="save-backup" hidden download>再次下载备份 ↓</a><p class="small" id="backup-help">检查只读取分区和启动信息，几秒完成。</p></div>
 <div id="progress-region" hidden><div class="progress-label"><b id="operation">等待操作</b><span id="percent">0%</span></div><progress id="progress" max="100" value="0">0%</progress></div><p class="result" id="result" role="status" aria-live="polite"></p>
 <div class="final-controls" id="final-controls" hidden><label class="check-row"><input type="checkbox" id="write-confirm"><span id="write-confirm-text">我确认安装所选版本，写入期间不拔线、不让电脑休眠。</span></label><button id="install-button" class="button blue-button" disabled>安装 RickyOS</button></div></div>
