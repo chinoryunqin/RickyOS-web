@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "product": "RickyOS",
+  "releases": [
+    {
+      "version": "1.2.2",
+      "approved": true,
+      "hardwareAccepted": true,
+      "mode": "auto-install",
+      "board": "readpico",
+      "chipId": 9,
+      "flashBytes": 16777216,
+      "file": "firmware/RickyOS-1.2.2-dev.bin",
+      "bytes": 5769104,
+      "sha256": "178548aeac8ad42eba5ba771fafac3dce7337acf92f59fabe4d48b720a6b7704",
+      "fullInstall": {
+        "approved": true,
+        "hardwareAccepted": true,
+        "factoryLayouts": [
+          "mindreset-factory-4m-v1"
+        ],
+        "otherSystems": true,
+        "segments": [
+          {
+            "role": "bootloader",
+            "offset": 0,
+            "file": "firmware/RickyOS-1.2.2-dev-bootloader.bin",
+            "bytes": 18720,
+            "sha256": "15f88ae11793eddc5b7e1f770fba54b10a6f59809c14d7c51cfbf0db8d2fa3ca"
+          },
+          {
+            "role": "partitions",
+            "offset": 32768,
+            "file": "firmware/RickyOS-1.2.2-dev-partitions.bin",
+            "bytes": 3072,
+            "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
+          },
+          {
+            "role": "boot_app0",
+            "offset": 57344,
+            "file": "firmware/RickyOS-1.2.2-dev-boot_app0.bin",
+            "bytes": 8192,
+            "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+          }
+        ]
+      },
+      "notes": [
+        "残影修复测试版（1.2.2-dev）"
+      ]
+    }
+  ]
+}
