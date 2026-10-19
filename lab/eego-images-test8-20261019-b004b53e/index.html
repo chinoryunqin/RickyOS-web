@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>RickyOS · A4 书内图片测试</title>
+  <script type="module" crossorigin src="./assets/lab-eego-wmjnOfCp.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/rom-GkxcFgpz.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp8266-nJGP_04n.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32-CB7_-LUd.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c3-BZLfUM_K.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c2-1TrTjx4Q.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c6-Dfdy-C9-.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c5-rcKaRAdP.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c61-BvjXauWh.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32h2-C-kYftFs.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32p4-BZaqg7oE.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32s2-CH74fsPZ.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32s3-CTpVmbHf.js">
+  <link rel="stylesheet" crossorigin href="./assets/lab-eego-oiQQJ0U-.css">
+</head>
+<body>
+  <main>
+    <a class="brand" href="../../">RickyOS</a>
+    <span id="build-version" class="badge">EEGO A4 · 第八轮测试</span>
+    <h1>A4 书内图片显示修复</h1>
+    <p class="intro">本地 EPUB 与微信读书的书内插图，改为与 A4 图片预览一致的黑白抖动显示；保留完整图片并做一次清晰刷新，取消随后会让图片变淡的灰度叠加。</p>
+    <p class="notice">此版本已通过构建和回归检查，尚待实机验证。支持 RickyOS A4 1.2.2、1.2.3 正式版或第七轮测试版；正式更新频道保持 1.2.3。</p>
+    <section>
+      <h2>1. 连接你的 A4</h2>
+      <p>在电脑 Chrome 或 Edge 打开本页，用 USB 数据线连接 A4，关闭其他占用设备的窗口。</p>
+      <label><input id="model" type="checkbox">我确认连接的是 EEGO A4，且已安装 RickyOS。</label>
+      <div class="buttons"><button id="connect" disabled>连接并检查设备</button><button id="disconnect" class="secondary" disabled>断开连接</button></div>
+      <p id="support" aria-live="polite">正在检查浏览器与测试固件。</p>
+    </section>
+    <section id="installation" hidden>
+      <h2>2. 安装测试版</h2>
+      <p>更新后保留设置、书籍与阅读进度。可先保存完整备份，方便后续排查。</p>
+      <div class="buttons"><button id="backup" class="secondary">下载完整备份（可选）</button></div>
+      <a id="save-backup" hidden>再次下载备份</a>
+      <label><input id="confirm" type="checkbox">我确认安装本测试版，写入期间保持连接，不让电脑休眠。</label>
+      <div class="buttons"><button id="install" disabled>安装第八轮测试版</button></div>
+    </section>
+    <div id="progress-region" hidden><div class="progress-label"><span id="operation"></span><b id="percent">0%</b></div><progress id="progress" max="100" value="0"></progress></div>
+    <p id="result" role="status" aria-live="polite"></p>
+    <section>
+      <h2>更新后试一下</h2>
+      <ul><li>打开之前出问题的本地 EPUB 插图页，等待刷新结束，检查图片是否仍然清晰可见。</li><li>微信读书打开同样有插图的章节，检查是否还会闪过后变淡。</li><li>从插图页翻到文字页，再翻回来，重复几次。</li><li>试一下阅读菜单返回、手动刷新和夜间模式。</li></ul>
+    </section>
+    <details><summary>查看安装日志</summary><pre id="log"></pre><button id="save-log" class="secondary">下载日志</button></details>
+    <footer><a id="firmware-link" hidden>下载测试固件</a><a href="../../install.html">正式安装页</a><a href="./third-party-licenses.txt">第三方许可</a></footer>
+  </main>
+</body>
+</html>
