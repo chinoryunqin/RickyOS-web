@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "product": "RickyOS",
+  "channel": "test",
+  "approved": false,
+  "hardwareAccepted": false,
+  "board": "eego_a4",
+  "chipId": 9,
+  "flashBytes": 16777216,
+  "version": "1.2.2",
+  "build": "a4-ui-fixes-20261019-fb978179",
+  "file": "firmware/RickyOS-EEGO-A4-ui-fixes-20261019-fb978179.bin",
+  "bytes": 5996672,
+  "sha256": "fb9781791e97bb9b6f34ca6c83edd12afb0a8a2742215c46b15bd602a9aa0a5c",
+  "compatibleAppElfSha256": [
+    "60fa7968052ca73a7a6245721d9e2397f49e791d21a34fcc290d59eb933030d0",
+    "2fc1f668d65d0de68d6dc14198db50cf07d16e76c54419909bf383fc63e49d42"
+  ]
+}

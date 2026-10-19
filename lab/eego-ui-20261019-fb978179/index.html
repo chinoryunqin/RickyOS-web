@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>RickyOS · A4 交互修复测试版</title>
+  <script type="module" crossorigin src="./assets/lab-eego-BBmQQ9ol.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/rom-GkxcFgpz.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp8266-nJGP_04n.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32-CB7_-LUd.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c3-BZLfUM_K.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c2-1TrTjx4Q.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c6-Dfdy-C9-.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c5-rcKaRAdP.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c61-BvjXauWh.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32h2-C-kYftFs.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32p4-BZaqg7oE.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32s2-CH74fsPZ.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32s3-CTpVmbHf.js">
+  <link rel="stylesheet" crossorigin href="./assets/lab-eego-oiQQJ0U-.css">
+</head>
+<body>
+  <main>
+    <a class="brand" href="../../">RickyOS</a>
+    <span class="badge">EEGO A4 · 测试版</span>
+    <h1>把操作调得更顺手。</h1>
+    <p class="intro">2026 年 10 月 19 日交互修复：Wi-Fi 输入大小写、资料页显示、字号选择、控制中心误触，以及更容易点中的左上角返回。</p>
+    <p class="notice">此版本已通过构建和模拟检查，尚待实机验证。支持已装 RickyOS 1.2.2 的 EEGO A4；正式更新频道保持原样。</p>
+    <section>
+      <h2>1. 连接你的 A4</h2>
+      <p>在电脑 Chrome 或 Edge 打开本页，用 USB 数据线连接 A4，关闭其他占用设备的窗口。</p>
+      <label><input id="model" type="checkbox">我确认连接的是 EEGO A4，且已安装 RickyOS。</label>
+      <div class="buttons"><button id="connect" disabled>连接并检查设备</button><button id="disconnect" class="secondary" disabled>断开连接</button></div>
+      <p id="support" aria-live="polite">正在检查浏览器与测试固件。</p>
+    </section>
+    <section id="installation" hidden>
+      <h2>2. 安装测试版</h2>
+      <p>更新后保留设置、书籍与阅读进度。可先保存完整备份，方便后续排查。</p>
+      <div class="buttons"><button id="backup" class="secondary">下载完整备份（可选）</button></div>
+      <a id="save-backup" hidden>再次下载备份</a>
+      <label><input id="confirm" type="checkbox">我确认安装本测试版，写入期间保持连接，不让电脑休眠。</label>
+      <div class="buttons"><button id="install" disabled>安装 A4 交互修复测试版</button></div>
+    </section>
+    <div id="progress-region" hidden><div class="progress-label"><span id="operation"></span><b id="percent">0%</b></div><progress id="progress" max="100" value="0"></progress></div>
+    <p id="result" role="status" aria-live="polite"></p>
+    <section>
+      <h2>更新后试一下</h2>
+      <ul><li>轻点字母输入，点 Shift 后输入大写。</li><li>打开个人资料，检查底部选项。</li><li>打开阅读字号，滑到列表末尾并选择。</li><li>在多个页面上滑，检查控制中心是否误开。</li><li>点左上角箭头及附近标题，检查返回。</li></ul>
+    </section>
+    <details><summary>查看安装日志</summary><pre id="log"></pre><button id="save-log" class="secondary">下载日志</button></details>
+    <footer><a id="firmware-link" hidden>下载测试固件</a><a href="../../install.html">正式安装页</a><a href="./third-party-licenses.txt">第三方许可</a></footer>
+  </main>
+</body>
+</html>
