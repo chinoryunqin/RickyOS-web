@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "product": "RickyOS",
+  "channel": "test",
+  "approved": false,
+  "hardwareAccepted": false,
+  "board": "eego_a4",
+  "chipId": 9,
+  "flashBytes": 16777216,
+  "version": "1.2.3-test.6",
+  "build": "a4-download-test6-20261019-08ec99cd",
+  "file": "firmware/RickyOS-EEGO-A4-1.2.3-test.6-08ec99cd.bin",
+  "bytes": 5997680,
+  "sha256": "08ec99cd58d4dbcc10562aee6a5c283d86b4b971b644460c0135c163f8b243a9",
+  "compatibleAppElfSha256": [
+    "60fa7968052ca73a7a6245721d9e2397f49e791d21a34fcc290d59eb933030d0",
+    "2fc1f668d65d0de68d6dc14198db50cf07d16e76c54419909bf383fc63e49d42",
+    "dbf36043c91021a093a0e25f8d17c811324b612be9756c083d1031868314cd01",
+    "e1f834c854a619fc0a737f8fa2957ddf982636300173d6b3c3336d72f1e92a4d",
+    "a03deec9749aaa04029e481321e9d63001078bd3bce37709cfb451047acdf4b9",
+    "9bf54aaf2f96998c6446287c1ced3a82dfbc09635daed72cceb0f9b86923eab4",
+    "c8a67b3bcb5f52c66f72a26c5bb83bf1610f53433326d6c5873ebfcaa9aa9c0d"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "product": "RickyOS",
-  "channel": "test",
+  "channel": "withdrawn",
   "approved": false,
   "hardwareAccepted": false,
   "board": "eego_a4",
@@ -19,5 +19,6 @@
     "e1f834c854a619fc0a737f8fa2957ddf982636300173d6b3c3336d72f1e92a4d",
     "a03deec9749aaa04029e481321e9d63001078bd3bce37709cfb451047acdf4b9",
     "9bf54aaf2f96998c6446287c1ced3a82dfbc09635daed72cceb0f9b86923eab4"
-  ]
+  ],
+  "supersededBy": "../eego-download-test6-20261019-08ec99cd/"
 }
