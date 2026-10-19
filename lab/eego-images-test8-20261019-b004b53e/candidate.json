@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "product": "RickyOS",
-  "channel": "test",
+  "channel": "withdrawn",
   "approved": false,
   "hardwareAccepted": false,
   "board": "eego_a4",
@@ -17,5 +17,7 @@
     "0fbb1fc941d0cacd4cc42ed099655ef601412e6e266f7e6ba72dfba3a3814fd0",
     "18891f42845a2e51b3271b188270c9550a943d97c7e0af20fe8ee2fe20a5ce67",
     "5de1728df9f4317818b96db19f192e06933c930e37378b1ab76760c827008161"
-  ]
+  ],
+  "supersededBy": "https://rickyaistudio.com/install.html",
+  "withdrawnReason": "EEGO A4 1.2.5 stable released"
 }
