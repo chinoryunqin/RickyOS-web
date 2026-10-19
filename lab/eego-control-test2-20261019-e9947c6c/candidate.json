@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "product": "RickyOS",
+  "channel": "test",
+  "approved": false,
+  "hardwareAccepted": false,
+  "board": "eego_a4",
+  "chipId": 9,
+  "flashBytes": 16777216,
+  "version": "1.2.3-test.2",
+  "build": "a4-control-pull-test2-20261019-e9947c6c",
+  "file": "firmware/RickyOS-EEGO-A4-1.2.3-test.2-e9947c6c.bin",
+  "bytes": 5996752,
+  "sha256": "e9947c6c1a4d71497cd1961b29de21def1dcea1d02831b16f6ea2c5929200ec0",
+  "compatibleAppElfSha256": [
+    "60fa7968052ca73a7a6245721d9e2397f49e791d21a34fcc290d59eb933030d0",
+    "2fc1f668d65d0de68d6dc14198db50cf07d16e76c54419909bf383fc63e49d42",
+    "dbf36043c91021a093a0e25f8d17c811324b612be9756c083d1031868314cd01"
+  ]
+}
