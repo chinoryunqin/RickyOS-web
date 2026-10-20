@@ -53,16 +53,16 @@
       ]
     },
     {
-      "version": "1.2.3",
+      "version": "1.2.4",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.3.bin",
-      "bytes": 4925024,
-      "sha256": "4c0c301ef9e7d5007b6f2ce9b30e456d1faf0bf2e5060a69af6981d6c59a64fd",
+      "file": "firmware/RickyOS-Plus-1.2.4.bin",
+      "bytes": 4906992,
+      "sha256": "d633d920853646ccade0f171f2dbcdcc4f34406e8c91ed057c935604f951f903",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -76,9 +76,13 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "修复了一些问题",
-        "支持 MOBI 和 AZW3",
-        "加入技能五子棋"
+        "改善热点和加入网络传书时，网页难打开、响应慢的问题",
+        "优化热点网页跳转，使用设备实际地址打开传书页面",
+        "新增锁屏右滑解锁开关，默认关闭；可在设置→系统→手势中开启",
+        "关闭滑动解锁后，全局返回手势不再误解锁；原按键唤醒保留",
+        "字体下载页隐藏当前来源等调试信息，保留下载进度与取消操作",
+        "新用户不再自动安装 CrossMux 用户指南，不删除已有书籍或指南",
+        "统一系统内部与界面的版本信息"
       ]
     },
     {
