@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "product": "RickyOS",
+  "channel": "test",
+  "approved": false,
+  "hardwareAccepted": false,
+  "board": "metalio-plus-s31",
+  "chipId": 32,
+  "flashBytes": 16777216,
+  "version": "1.2.4-imgdiag2",
+  "build": "plus-imgdiag2-20261021-1394766a",
+  "file": "firmware/RickyOS-Plus-1.2.4-imgdiag2-1394766a.bin",
+  "bytes": 4928144,
+  "sha256": "1394766acd348c9af956556ba84dbcb4879ceff8eb8909a3aa4e727b275c22c6",
+  "compatibleAppElfSha256": [
+    "a60ba2eaba332e657db0b2053af1b4d8df02b41f09e1e864d72ecc71ad3ad847",
+    "f3b834b32277bf917e3dbb6b17f91a75a5d51308511eb10bea041f1f658aff95",
+    "cf22571e437525028f23255d5f4a31e271f963d8151d9ee70809fa7a3f5b4574"
+  ]
+}

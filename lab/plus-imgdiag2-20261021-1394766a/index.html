@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>RickyOS · Plus 图片诊断版</title>
+  <script type="module" crossorigin src="./assets/lab-plus-Dx3rhq7-.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/rom-GkxcFgpz.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp8266-nJGP_04n.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32-CB7_-LUd.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c3-BZLfUM_K.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c2-1TrTjx4Q.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c6-Dfdy-C9-.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c5-rcKaRAdP.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c61-BvjXauWh.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32h2-C-kYftFs.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32p4-BZaqg7oE.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32s2-CH74fsPZ.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32s3-CTpVmbHf.js">
+  <link rel="stylesheet" crossorigin href="./assets/lab-plus-1PYXiIOY.css">
+</head>
+<body data-device="plus">
+  <main>
+    <a class="brand" href="../../">RickyOS</a>
+    <span id="build-version" class="badge">Metalio Plus · 诊断版</span>
+    <h1>Plus 漫画图片诊断版</h1>
+    <p class="intro">用来排查部分设备上漫画图片显示成马赛克、个别书打不开的问题。功能和 1.2.4 正式版相同，额外把每张图片的解码情况、打开书的过程和出错信息记录到 SD 卡根目录的 <code>rickyos-imgdiag.txt</code>。</p>
+    <p class="notice">此版本已通过构建检查，仅用于问题排查，尚待实机验证。支持已安装 RickyOS Plus 1.2.3、1.2.4 正式版的设备；正式更新频道保持 1.2.4。</p>
+    <section>
+      <h2>1. 连接你的 Plus</h2>
+      <p>在电脑 Chrome 或 Edge 打开本页，用 USB 数据线连接 Plus，关闭其他占用设备的窗口。</p>
+      <label><input id="model" type="checkbox">我确认连接的是 Metalio Plus，且已安装 RickyOS。</label>
+      <div class="buttons"><button id="connect" disabled>连接并检查设备</button><button id="disconnect" class="secondary" disabled>断开连接</button></div>
+      <p id="support" aria-live="polite">正在检查浏览器与测试固件。</p>
+    </section>
+    <section id="installation" hidden>
+      <h2>2. 安装诊断版</h2>
+      <p>更新后保留设置、书籍与阅读进度。可先保存完整备份，方便后续排查。</p>
+      <div class="buttons"><button id="backup" class="secondary">下载完整备份（可选）</button></div>
+      <a id="save-backup" hidden>再次下载备份</a>
+      <label><input id="confirm" type="checkbox">我确认安装本诊断版，写入期间保持连接，不让电脑休眠。</label>
+      <div class="buttons"><button id="install" disabled>安装诊断版</button></div>
+    </section>
+    <div id="progress-region" hidden><div class="progress-label"><span id="operation"></span><b id="percent">0%</b></div><progress id="progress" max="100" value="0"></progress></div>
+    <p id="result" role="status" aria-live="polite"></p>
+    <section>
+      <h2>安装后这样操作</h2>
+      <ol>
+        <li>设置 → 书库与文件 → 清除阅读缓存。</li>
+        <li>打开出现马赛克的漫画，从第一页开始按平时的速度往后看，直到马赛克出现后再多翻几页。</li>
+        <li>再打开那本打不开的书，等它报错或退出。</li>
+        <li>把 SD 卡根目录的 <code>rickyos-imgdiag.txt</code> 发给我们；如果有 <code>rickyos-log.txt</code>，也一起发。</li>
+      </ol>
+      <p>排查结束后，用正式安装页或在线更新回到正式版即可。</p>
+    </section>
+    <details><summary>查看安装日志</summary><pre id="log"></pre><button id="save-log" class="secondary">下载日志</button></details>
+    <footer><a id="firmware-link" hidden>下载诊断固件</a><a href="../../install.html">正式安装页</a><a href="./third-party-licenses.txt">第三方许可</a></footer>
+  </main>
+</body>
+</html>
