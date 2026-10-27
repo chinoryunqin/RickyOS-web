@@ -54,16 +54,16 @@
       ]
     },
     {
-      "version": "1.2.8",
+      "version": "1.2.9",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.8.bin",
-      "bytes": 5039664,
-      "sha256": "441248a6b92cb052a522c3e33d83f0d38eba801557f2f36694a7e2a2204e9cd5",
+      "file": "firmware/RickyOS-Plus-1.2.9.bin",
+      "bytes": 5733328,
+      "sha256": "b53296516b69b5d8beac1aa518cb349646ee6d30dc69640a2b59a4ab9c552617",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -77,11 +77,14 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "支持 WPA3 无线网络。",
-        "改善联网访问和下载稳定性，减少已连接但加载失败的问题。",
-        "新增「惯用手」功能，在阅读界面的「更多操作」中开启。",
-        "优化界面文字对比度和灰阶层次，增强底部导航选中效果。",
-        "修复了一些 UI 设计问题。"
+        "优化了翻页速度和翻页动效",
+        "阅读文字墨色更饱满",
+        "阅读页底部改为一行显示页码、进度条和百分比，正文区域更大",
+        "改为点击屏幕顶部打开阅读菜单，减少误触",
+        "阅读背景最深一档改为「原色」，按图片本来的颜色显示",
+        "支持打开 UTF-16 编码的 TXT 文件",
+        "主页键可设为「返回」，设置重启后不再丢失；修正横屏翻页键方向",
+        "修复了一些 UI 设计问题"
       ]
     },
     {
