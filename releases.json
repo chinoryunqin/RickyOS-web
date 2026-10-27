@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.7",
+      "version": "1.2.8",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.7.bin",
-      "bytes": 5977104,
-      "sha256": "a3123aa9493f963b8f83859d74067c0b502ae9466e7c9a08b23e3f0b04f15c9c",
+      "file": "firmware/RickyOS-1.2.8.bin",
+      "bytes": 5978288,
+      "sha256": "d2143ed2889f413ab02eb531aeea5254bf16c7cab179fdacaf3d799d05d6cb3d",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,13 +45,12 @@
         ]
       },
       "notes": [
-        "新增图库应用，「屏保」改名为「壁纸」",
-        "新增阅读背景：可选图片或横线、方格、网点纸样，分浅、中、深三档",
-        "缩略图逐张显示并提前准备下一页；透明壁纸改为九宫格选择",
-        "新增翻页动效和主界面切换动效，默认开启",
-        "阅读区边距更紧凑",
-        "支持打开超大照片",
-        "全刷间隔修改后立即生效"
+        "新增「惯用手」，在阅读界面的「更多操作」中切换左右手",
+        "阅读页底部改为一行显示页码、进度条和百分比，正文显示区域更大",
+        "改为点击屏幕顶部打开阅读菜单，减少误触",
+        "阅读背景最深一档改为「原色」，按图片本来的颜色显示",
+        "支持打开 UTF-16 编码的 TXT 文件",
+        "修复了一些 UI 设计问题"
       ]
     },
     {
