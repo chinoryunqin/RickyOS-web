@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "product": "RickyOS",
+  "releases": [
+    {
+      "version": "1.2.7",
+      "approved": true,
+      "hardwareAccepted": true,
+      "mode": "auto-install",
+      "board": "readpico",
+      "chipId": 9,
+      "flashBytes": 16777216,
+      "file": "firmware/RickyOS-1.2.7.bin",
+      "bytes": 5977104,
+      "sha256": "a3123aa9493f963b8f83859d74067c0b502ae9466e7c9a08b23e3f0b04f15c9c",
+      "fullInstall": {
+        "approved": true,
+        "hardwareAccepted": true,
+        "factoryLayouts": [
+          "mindreset-factory-4m-v1"
+        ],
+        "otherSystems": true,
+        "segments": [
+          {
+            "role": "bootloader",
+            "offset": 0,
+            "file": "firmware/RickyOS-1.2.2-bootloader.bin",
+            "bytes": 18720,
+            "sha256": "15f88ae11793eddc5b7e1f770fba54b10a6f59809c14d7c51cfbf0db8d2fa3ca"
+          },
+          {
+            "role": "partitions",
+            "offset": 32768,
+            "file": "firmware/RickyOS-1.2.2-partitions.bin",
+            "bytes": 3072,
+            "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
+          },
+          {
+            "role": "boot_app0",
+            "offset": 57344,
+            "file": "firmware/RickyOS-1.2.2-boot_app0.bin",
+            "bytes": 8192,
+            "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+          }
+        ]
+      },
+      "notes": [
+        "新增图库应用，「屏保」改名为「壁纸」",
+        "新增阅读背景：可选图片或横线、方格、网点纸样，分浅、中、深三档",
+        "缩略图逐张显示并提前准备下一页；透明壁纸改为九宫格选择",
+        "新增翻页动效和主界面切换动效，默认开启",
+        "阅读区边距更紧凑",
+        "支持打开超大照片",
+        "全刷间隔修改后立即生效"
+      ]
+    },
+    {
+      "version": "1.2.8",
+      "approved": true,
+      "hardwareAccepted": true,
+      "mode": "plus-install",
+      "board": "metalio-plus-s31",
+      "chipId": 32,
+      "flashBytes": 16777216,
+      "file": "firmware/RickyOS-Plus-1.2.8.bin",
+      "bytes": 5039664,
+      "sha256": "441248a6b92cb052a522c3e33d83f0d38eba801557f2f36694a7e2a2204e9cd5",
+      "bootloader": {
+        "offset": 8192,
+        "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
+        "bytes": 19600,
+        "sha256": "16d6f3f762fc736632a78eab6105f8c5eb167cefec9ca1967b89ecca50457a60"
+      },
+      "partitions": {
+        "offset": 32768,
+        "file": "firmware/RickyOS-Plus-1.2.3-partitions.bin",
+        "bytes": 3072,
+        "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
+      },
+      "notes": [
+        "支持 WPA3 无线网络。",
+        "改善联网访问和下载稳定性，减少已连接但加载失败的问题。",
+        "新增「惯用手」功能，在阅读界面的「更多操作」中开启。",
+        "优化界面文字对比度和灰阶层次，增强底部导航选中效果。",
+        "修复了一些 UI 设计问题。"
+      ]
+    }
+  ]
+}
