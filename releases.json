@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.8",
+      "version": "1.2.10",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.8.bin",
-      "bytes": 5978288,
-      "sha256": "d2143ed2889f413ab02eb531aeea5254bf16c7cab179fdacaf3d799d05d6cb3d",
+      "file": "firmware/RickyOS-1.2.10.bin",
+      "bytes": 6001392,
+      "sha256": "d853808d023a1ae1688908f92ca1d02c8a68868ffee9fc2886f928574c55b856",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,25 +45,27 @@
         ]
       },
       "notes": [
-        "新增「惯用手」，在阅读界面的「更多操作」中切换左右手",
-        "阅读页底部改为一行显示页码、进度条和百分比，正文显示区域更大",
-        "改为点击屏幕顶部打开阅读菜单，减少误触",
-        "阅读背景最深一档改为「原色」，按图片本来的颜色显示",
-        "支持打开 UTF-16 编码的 TXT 文件",
-        "修复了一些 UI 设计问题"
+        "优化了翻页效果",
+        "新的书籍封面待机",
+        "优化了 txt 文件阅读",
+        "书库可以按文件夹浏览",
+        "可以调整阅读页边距",
+        "新的控制中心，目录中标出当前章节",
+        "主页键可设为切换惯用手或进入待机",
+        "修复了一些问题"
       ]
     },
     {
-      "version": "1.2.9",
+      "version": "1.2.10",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.9.bin",
-      "bytes": 5733328,
-      "sha256": "b53296516b69b5d8beac1aa518cb349646ee6d30dc69640a2b59a4ab9c552617",
+      "file": "firmware/RickyOS-Plus-1.2.10.bin",
+      "bytes": 5759312,
+      "sha256": "d7feeb233aece6f9a321f9c8d9a7e637536cfb6be67e1d2e31581388bc9439b7",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -77,14 +79,14 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "优化了翻页速度和翻页动效",
-        "阅读文字墨色更饱满",
-        "阅读页底部改为一行显示页码、进度条和百分比，正文区域更大",
-        "改为点击屏幕顶部打开阅读菜单，减少误触",
-        "阅读背景最深一档改为「原色」，按图片本来的颜色显示",
-        "支持打开 UTF-16 编码的 TXT 文件",
-        "主页键可设为「返回」，设置重启后不再丢失；修正横屏翻页键方向",
-        "修复了一些 UI 设计问题"
+        "优化了翻页效果",
+        "新的书籍封面待机",
+        "优化了 txt 文件阅读",
+        "书库可以按文件夹浏览",
+        "可以调整阅读页边距",
+        "新的控制中心，目录中标出当前章节",
+        "主页键可设为切换惯用手或进入待机",
+        "修复了一些问题"
       ]
     },
     {
