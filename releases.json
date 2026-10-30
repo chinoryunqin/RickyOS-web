@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.11",
+      "version": "1.2.12",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.11.bin",
-      "bytes": 6010560,
-      "sha256": "564bc79941d15debd479f18c607b9dd7813650c2402ee71172a01fe668112be9",
+      "file": "firmware/RickyOS-1.2.12.bin",
+      "bytes": 6009712,
+      "sha256": "5797b3c20e5eb5e26a9e1f487b38cd81426f64e1ddc66f88cdbcac85e9c7a114",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,23 +45,24 @@
         ]
       },
       "notes": [
-        "新增阅读触摸九宫格，可自定义各区操作",
-        "横屏、竖屏独立设置，支持全屏编辑",
-        "日历时钟支持选择横屏方向",
-        "修复部分 EPUB 重新打开后进度丢失"
+        "阅读触摸九宫格新增「查看目录」",
+        "按键动作新增「加入书签」，重复触发保留已有书签",
+        "暂停待机右滑解锁，并自动关闭旧版本已开启的设置",
+        "自动待机和待机后关机时间统一移至「显示与待机」",
+        "修复阅读统计中「成就」开关误打开每日目标的问题"
       ]
     },
     {
-      "version": "1.2.11",
+      "version": "1.2.12",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.11.bin",
-      "bytes": 5767344,
-      "sha256": "fdaf34ae5a6a6b9ef649c62c79b2575afee23364895ffd13d1b5f1e2e48074de",
+      "file": "firmware/RickyOS-Plus-1.2.12.bin",
+      "bytes": 5766448,
+      "sha256": "770719741d61d9f58fed84123da1b338878286fa7dc1f2a7b83da2ef93e3332d",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -75,13 +76,11 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "新增阅读触摸九宫格，横竖屏独立设置",
-        "日历时钟支持选择横屏方向",
-        "新增侧边键震动开关，触控震动独立设置",
-        "阅读控制中心新增高清与快刷切换",
-        "修复部分 EPUB 阅读进度丢失的问题",
-        "修复书库部分封面不显示的问题",
-        "优化按键初始化，修复偶发按键无响应"
+        "阅读触摸九宫格新增「查看目录」",
+        "按键动作新增「加入书签」，重复触发保留已有书签",
+        "暂停待机右滑解锁，并自动关闭旧版本已开启的设置",
+        "自动待机和待机后关机时间统一移至「显示与待机」",
+        "修复阅读统计中「成就」开关误打开每日目标的问题"
       ]
     },
     {
