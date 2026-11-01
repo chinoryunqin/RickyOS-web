@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.12",
+      "version": "1.2.13",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.12.bin",
-      "bytes": 6009712,
-      "sha256": "5797b3c20e5eb5e26a9e1f487b38cd81426f64e1ddc66f88cdbcac85e9c7a114",
+      "file": "firmware/RickyOS-1.2.13.bin",
+      "bytes": 5960144,
+      "sha256": "69b0aa82fb6ab55f738edbb12aa789620c0400f0f75c09cfc20019f90235df7e",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,24 +45,25 @@
         ]
       },
       "notes": [
-        "阅读触摸九宫格新增「查看目录」",
-        "按键动作新增「加入书签」，重复触发保留已有书签",
-        "暂停待机右滑解锁，并自动关闭旧版本已开启的设置",
-        "自动待机和待机后关机时间统一移至「显示与待机」",
-        "修复阅读统计中「成就」开关误打开每日目标的问题"
+        "控制中心新增蓝牙快捷按钮，支持开关和长按进入配对设置",
+        "优化内存分配，改善复杂书籍阅读与蓝牙翻页同时使用时的稳定性",
+        "支持 WebP 封面及正文图片，补充人物介绍页背景图的显示",
+        "改善 EPUB 内嵌字体兼容性，修复部分书籍乱码和精排字体缺失",
+        "改善异常 EPUB 的兼容处理，避免局部格式错误阻断后续阅读",
+        "阅读触摸九宫格新增「添加书签」"
       ]
     },
     {
-      "version": "1.2.12",
+      "version": "1.2.13",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.12.bin",
-      "bytes": 5766448,
-      "sha256": "770719741d61d9f58fed84123da1b338878286fa7dc1f2a7b83da2ef93e3332d",
+      "file": "firmware/RickyOS-Plus-1.2.13.bin",
+      "bytes": 5980496,
+      "sha256": "4798876585687e2d61335dfa5a2c8e4f69d1753b7a793aff2d8c30926b9cb947",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -76,11 +77,12 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "阅读触摸九宫格新增「查看目录」",
-        "按键动作新增「加入书签」，重复触发保留已有书签",
-        "暂停待机右滑解锁，并自动关闭旧版本已开启的设置",
-        "自动待机和待机后关机时间统一移至「显示与待机」",
-        "修复阅读统计中「成就」开关误打开每日目标的问题"
+        "完善蓝牙翻页器支持，改善配对、连接保持和按键识别",
+        "支持 WebP 封面及正文图片，补充人物介绍页背景图的显示",
+        "改善 EPUB 内嵌字体兼容性，修复部分书籍乱码和精排字体缺失",
+        "改善异常 EPUB 的兼容处理，避免局部格式错误阻断后续阅读",
+        "阅读触摸九宫格新增「添加书签」",
+        "AI 键新增「切换惯用手」绑定"
       ]
     },
     {
