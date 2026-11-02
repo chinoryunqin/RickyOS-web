@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.12",
+      "version": "1.2.13",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.12.bin",
-      "bytes": 6009712,
-      "sha256": "5797b3c20e5eb5e26a9e1f487b38cd81426f64e1ddc66f88cdbcac85e9c7a114",
+      "file": "firmware/RickyOS-1.2.13.bin",
+      "bytes": 5960144,
+      "sha256": "69b0aa82fb6ab55f738edbb12aa789620c0400f0f75c09cfc20019f90235df7e",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,24 +45,25 @@
         ]
       },
       "notes": [
-        "阅读触摸九宫格新增「查看目录」",
-        "按键动作新增「加入书签」，重复触发保留已有书签",
-        "暂停待机右滑解锁，并自动关闭旧版本已开启的设置",
-        "自动待机和待机后关机时间统一移至「显示与待机」",
-        "修复阅读统计中「成就」开关误打开每日目标的问题"
+        "控制中心新增蓝牙快捷按钮，支持开关和长按进入配对设置",
+        "优化内存分配，改善复杂书籍阅读与蓝牙翻页同时使用时的稳定性",
+        "支持 WebP 封面及正文图片，补充人物介绍页背景图的显示",
+        "改善 EPUB 内嵌字体兼容性，修复部分书籍乱码和精排字体缺失",
+        "改善异常 EPUB 的兼容处理，避免局部格式错误阻断后续阅读",
+        "阅读触摸九宫格新增「添加书签」"
       ]
     },
     {
-      "version": "1.2.12",
+      "version": "1.2.13",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.12.bin",
-      "bytes": 5766448,
-      "sha256": "770719741d61d9f58fed84123da1b338878286fa7dc1f2a7b83da2ef93e3332d",
+      "file": "firmware/RickyOS-Plus-1.2.13.bin",
+      "bytes": 5980496,
+      "sha256": "4798876585687e2d61335dfa5a2c8e4f69d1753b7a793aff2d8c30926b9cb947",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -76,11 +77,59 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "阅读触摸九宫格新增「查看目录」",
-        "按键动作新增「加入书签」，重复触发保留已有书签",
-        "暂停待机右滑解锁，并自动关闭旧版本已开启的设置",
-        "自动待机和待机后关机时间统一移至「显示与待机」",
-        "修复阅读统计中「成就」开关误打开每日目标的问题"
+        "完善蓝牙翻页器支持，改善配对、连接保持和按键识别",
+        "支持 WebP 封面及正文图片，补充人物介绍页背景图的显示",
+        "改善 EPUB 内嵌字体兼容性，修复部分书籍乱码和精排字体缺失",
+        "改善异常 EPUB 的兼容处理，避免局部格式错误阻断后续阅读",
+        "阅读触摸九宫格新增「添加书签」",
+        "AI 键新增「切换惯用手」绑定"
+      ]
+    },
+    {
+      "version": "1.2.5",
+      "approved": true,
+      "hardwareAccepted": true,
+      "mode": "auto-install",
+      "board": "eego_a4",
+      "chipId": 9,
+      "flashBytes": 16777216,
+      "file": "firmware/RickyOS-EEGO-A4-1.2.5.bin",
+      "bytes": 5993872,
+      "sha256": "194306dd40b850fbc084c4b8579da233f3b8a9c93e2a0414b92fefa711c279a4",
+      "fullInstall": {
+        "approved": true,
+        "hardwareAccepted": true,
+        "factoryLayouts": [],
+        "otherSystems": true,
+        "segments": [
+          {
+            "role": "bootloader",
+            "offset": 0,
+            "file": "firmware/RickyOS-EEGO-A4-1.2.5-bootloader.bin",
+            "bytes": 18720,
+            "sha256": "15f88ae11793eddc5b7e1f770fba54b10a6f59809c14d7c51cfbf0db8d2fa3ca"
+          },
+          {
+            "role": "partitions",
+            "offset": 32768,
+            "file": "firmware/RickyOS-EEGO-A4-1.2.5-partitions.bin",
+            "bytes": 3072,
+            "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
+          },
+          {
+            "role": "boot_app0",
+            "offset": 57344,
+            "file": "firmware/RickyOS-EEGO-A4-1.2.5-boot_app0.bin",
+            "bytes": 8192,
+            "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+          }
+        ]
+      },
+      "notes": [
+        "修复本地 EPUB 与微信读书插图闪过后变淡、残影的问题",
+        "A4 书内插图采用黑白抖动显示，并做一次清理刷新",
+        "修复 A4 在线更新机型判断，优先使用 COS 下载源",
+        "包含 1.2.3 的返回触控、控制中心、WiFi 和阅读界面修复"
       ]
     }
   ]
