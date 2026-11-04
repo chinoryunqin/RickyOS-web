@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.14",
+      "version": "1.2.15",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.14.bin",
-      "bytes": 5961488,
-      "sha256": "be084fa7a8d8b914b26082bde2eded56583385350313a6cc193264ce3fdcb5a9",
+      "file": "firmware/RickyOS-1.2.15.bin",
+      "bytes": 5965296,
+      "sha256": "ada50cbeab7c749c73c5671e86d985de77dac93c184b2cfc4cec6fc51130a9e5",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,20 +45,24 @@
         ]
       },
       "notes": [
-        "蓝牙按键绑定新增「重置全部绑定」，保留已配对设备"
+        "书架记住上次文件夹，退出重进和重启后自动恢复",
+        "修复已添加目录在文件夹筛选中遗漏的问题",
+        "行距支持80%至400%，可按1%微调",
+        "修复MOBI和AZW3封面显示",
+        "优化联网后的待机处理"
       ]
     },
     {
-      "version": "1.2.14",
+      "version": "1.2.15",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.14.bin",
-      "bytes": 5984336,
-      "sha256": "c806b7f3fa05682b8ac770aa035f5bcac67dc679f8524f82ab1fb3db043edd41",
+      "file": "firmware/RickyOS-Plus-1.2.15.bin",
+      "bytes": 5987520,
+      "sha256": "7d3e0b16952440cae7be18a5ded5d0b06c385fc591025686cd0e89c97ab273c3",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -72,8 +76,11 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "蓝牙按键绑定新增「重置全部绑定」，保留已配对设备",
-        "修复部分场景待机耗电异常"
+        "书架记住上次文件夹，退出重进和重启后自动恢复",
+        "修复已添加目录在文件夹筛选中遗漏的问题",
+        "行距支持80%至400%，可按1%微调",
+        "修复MOBI和AZW3封面显示",
+        "充电调整为1.5A档，实际设定1440mA"
       ]
     },
     {

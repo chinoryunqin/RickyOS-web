@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.15",
+      "version": "1.2.16",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.15.bin",
-      "bytes": 5965296,
-      "sha256": "ada50cbeab7c749c73c5671e86d985de77dac93c184b2cfc4cec6fc51130a9e5",
+      "file": "firmware/RickyOS-1.2.16.bin",
+      "bytes": 5977728,
+      "sha256": "613341e6bcfcf5c62aa58640233a3de5e17fa0b1a89f06fc565142b36bc0197a",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,24 +45,25 @@
         ]
       },
       "notes": [
-        "书架记住上次文件夹，退出重进和重启后自动恢复",
-        "修复已添加目录在文件夹筛选中遗漏的问题",
-        "行距支持80%至400%，可按1%微调",
-        "修复MOBI和AZW3封面显示",
-        "优化联网后的待机处理"
+        "阅读图像新增对比度、亮度和平滑调节",
+        "图像调节和书签可在阅读主菜单直接打开",
+        "支持同屏预览、原图对比和本书单独设置",
+        "增强对比度范围，调整图像默认亮度",
+        "修复部分电子书浅色底框显示过深的问题",
+        "阅读菜单移除夜间模式和前光入口"
       ]
     },
     {
-      "version": "1.2.15",
+      "version": "1.2.16",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.15.bin",
-      "bytes": 5987520,
-      "sha256": "7d3e0b16952440cae7be18a5ded5d0b06c385fc591025686cd0e89c97ab273c3",
+      "file": "firmware/RickyOS-Plus-1.2.16.bin",
+      "bytes": 5997504,
+      "sha256": "fe79fdcd7b6fe7104315dc382be4f09706e65644ede9481901a4ad9014805678",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -76,11 +77,12 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "书架记住上次文件夹，退出重进和重启后自动恢复",
-        "修复已添加目录在文件夹筛选中遗漏的问题",
-        "行距支持80%至400%，可按1%微调",
-        "修复MOBI和AZW3封面显示",
-        "充电调整为1.5A档，实际设定1440mA"
+        "阅读图像新增对比度、亮度和平滑调节",
+        "图像调节和书签可在阅读主菜单直接打开",
+        "支持同屏预览、原图对比和本书单独设置",
+        "增强对比度范围，调整图像默认亮度",
+        "修复部分电子书浅色底框显示过深的问题",
+        "阅读菜单移除夜间模式和前光入口"
       ]
     },
     {
