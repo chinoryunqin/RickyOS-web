@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "product": "RickyOS",
+  "channel": "test",
+  "approved": false,
+  "hardwareAccepted": false,
+  "board": "metalio-plus-s31",
+  "chipId": 32,
+  "flashBytes": 16777216,
+  "version": "1.2.17-wr1",
+  "build": "plus-weread-wr1-20261105-5bc7d230",
+  "file": "firmware/RickyOS-Plus-1.2.17-wr1.bin",
+  "bytes": 5990032,
+  "sha256": "5bc7d23046b88bca324fd364cde29e16783341946af07ea9ab733a98ed74995b",
+  "compatibleAppElfSha256": [
+    "d6db3d092ce7848b43ef7d39088db14bc8496dad0dd0d694dc74ca90d3580625",
+    "53086b929bc0e636d7b14626aad7690bb09066d7193691dfd54b878e8974dfe8",
+    "42fd612143a2c30e52edb5e918e3695809bbda2111fd699acc8c586f6941f851"
+  ]
+}
