@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.17",
+      "version": "1.2.18",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.17.bin",
-      "bytes": 5342464,
-      "sha256": "44d9336e0ed1e829ce76825e053ce4d52ee6c64adf1e08275848c5f37bea0da4",
+      "file": "firmware/RickyOS-1.2.18.bin",
+      "bytes": 5343680,
+      "sha256": "9cc3e55adc393d8c11fc5b7449ccd1a461561fc88e97b9aa4d56ddd580d86caf",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,25 +45,25 @@
         ]
       },
       "notes": [
-        "新增繁體中文界面",
-        "支持独立界面字体与 80%–140% 字号调节",
-        "支持 0%–400% 段间距，既可收紧也可放大",
-        "修复大界面字号下首页问候语显示不全",
-        "完善阅读统计、月报和徽章的布局与滚动",
-        "修复存储文件列表底部项目无法点击"
+        "字符间距支持 −8～+8 px，支持滑条、加减和确认／取消",
+        "修复 TXT 段间距调节不生效",
+        "优化存储列表间距与长书名底部显示",
+        "阅读返回恢复原目录、选中项与列表位置",
+        "修正电量数字与电池图标对齐",
+        "修复微信读书同步时的字体测量与分页并发访问"
       ]
     },
     {
-      "version": "1.2.17",
+      "version": "1.2.18",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.17.bin",
-      "bytes": 5989808,
-      "sha256": "19f6be8e2080b195bdcc8f9d6bf4fecbc1a3ea4a9f8394bb3be189e7634b12b3",
+      "file": "firmware/RickyOS-Plus-1.2.18.bin",
+      "bytes": 5991776,
+      "sha256": "f4168e9a8f0ab676f8d2177a0027879bd5cd2aa633b8f210a5ca42c0482ed79e",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -77,14 +77,13 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "新增繁體中文界面",
-        "支持独立界面字体与 80%–140% 字号调节",
-        "支持 0%–400% 段间距，既可收紧也可放大",
-        "修复大界面字号下首页问候语显示不全",
-        "完善阅读统计、月报和徽章的布局与滚动",
-        "修复存储文件列表底部项目无法点击",
-        "Plus 优化封面后台生成和书名字体适配",
-        "Plus 修复按键设置保存"
+        "字符间距支持 −8～+8 px，支持滑条、加减和确认／取消",
+        "修复 TXT 段间距调节不生效",
+        "优化存储列表间距与长书名底部显示",
+        "阅读返回恢复原目录、选中项与列表位置",
+        "修正电量数字与电池图标对齐",
+        "修复微信读书同步时的字体测量与分页并发访问",
+        "Plus 增加外部 RTC 走时复核，离线使用和唤醒后纠正时间累积偏差"
       ]
     },
     {
