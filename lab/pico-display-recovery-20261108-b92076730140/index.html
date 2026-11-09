@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>RickyOS · 小纸 Pico 显示恢复</title>
+  <script type="module" crossorigin src="./assets/recovery-Buz9q-u_.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/rom-GkxcFgpz.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp8266-nJGP_04n.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32-CB7_-LUd.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c3-BZLfUM_K.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c2-1TrTjx4Q.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c6-Dfdy-C9-.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c5-rcKaRAdP.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32c61-BvjXauWh.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32h2-C-kYftFs.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32p4-BZaqg7oE.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32s2-CH74fsPZ.js">
+  <link rel="modulepreload" crossorigin href="./assets/esp32s3-CTpVmbHf.js">
+  <link rel="stylesheet" crossorigin href="./assets/recovery-oiQQJ0U-.css">
+</head>
+<body>
+  <main>
+    <a class="brand" href="https://rickyaistudio.com/">RickyOS</a>
+    <span class="badge">Read Pico · 临时诊断</span>
+    <h1>小纸 Pico 显示恢复</h1>
+    <p class="intro">用于屏幕停在旧画面、电脑仍能识别设备的小纸 Pico（RDP-G01-W）。刷入后网页会读取诊断并显示故障位置。板级检查通过时，可在同一页尝试一次清屏。</p>
+    <p id="availability" class="notice" role="status">正在检查恢复包。</p>
+
+    <section>
+      <h2>1. 连接并检查设备</h2>
+      <p>用电脑上的 Chrome 或 Edge 打开页面。用 USB 数据线连接，关闭其他占用串口的程序。设备需能进入 ESP32 下载模式。</p>
+      <label><input id="model" type="checkbox">我已核对机身型号为 RDP-G01-W。</label>
+      <div class="buttons">
+        <button id="connect" disabled>连接并检查设备</button>
+        <button id="disconnect" class="secondary" disabled>断开连接</button>
+      </div>
+      <p id="support" aria-live="polite"></p>
+    </section>
+
+    <section id="installation" hidden>
+      <h2>2. 刷入恢复固件</h2>
+      <p id="device-state"></p>
+      <p>恢复固件会覆盖当前启动应用。写入期间请保持 USB 连接和电脑唤醒。</p>
+      <label><input id="confirm" type="checkbox">我确认刷入恢复固件。</label>
+      <div class="buttons"><button id="write" disabled>刷入恢复固件</button></div>
+      <p id="write-hint" aria-live="polite"></p>
+    </section>
+
+    <div id="progress-region" hidden>
+      <div class="progress-label"><span id="operation"></span><b id="percent">0%</b></div>
+      <progress id="progress" max="100" value="0"></progress>
+    </div>
+    <p id="result" role="status" aria-live="polite"></p>
+
+    <section>
+      <h2>3. 读取 USB 诊断</h2>
+      <p>刷入并重启后自动读取诊断。如果串口没有自动接上，点「读取诊断（连接 USB）」。</p>
+      <div class="buttons">
+        <button id="serial" class="secondary" disabled>读取诊断（连接 USB）</button>
+        <button id="diag" class="secondary" disabled>重读诊断</button>
+        <button id="refresh" class="secondary" disabled>尝试一次清屏</button>
+      </div>
+      <p id="diagnostic-hint" aria-live="polite"></p>
+      <p id="diagnosis-result" class="notice" role="status"></p>
+      <div id="panel-observation" hidden>
+        <p>清屏结束后，你看到什么？</p>
+        <div class="buttons">
+          <button id="screen-cleared" class="secondary">屏幕已清白</button>
+          <button id="screen-stuck" class="secondary">屏幕未清白</button>
+        </div>
+      </div>
+      <button id="save-log" class="secondary">下载诊断报告</button>
+      <p>诊断结束后，可关闭诊断串口，用平时的刷机方式装回原固件。</p>
+    </section>
+    <details>
+      <summary>查看连接与诊断日志</summary>
+      <pre id="log"></pre>
+    </details>
+    <footer><a href="https://rickyaistudio.com/install.html">正式安装页</a><a href="./third-party-licenses.txt">第三方许可</a></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "board": "readpico",
+  "model": "RDP-G01-W",
+  "channel": "recovery-lab",
+  "approved": false,
+  "hardwareAccepted": true,
+  "localTrial": false,
+  "publishTest": false,
+  "chipId": 9,
+  "flashBytes": 16777216,
+  "build": "pico-display-recovery-20261108-b92076730140",
+  "recovery": {
+    "version": "pico-recovery-0.2",
+    "file": "firmware/recovery.bin",
+    "bytes": 472336,
+    "sha256": "b92076730140ff432b2d93a087fdd6576b6796ba43897fea4efce4a8a6843bc4"
+  }
+}
