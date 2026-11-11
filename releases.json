@@ -50,16 +50,16 @@
       ]
     },
     {
-      "version": "1.2.21",
+      "version": "1.2.20",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.21.bin",
+      "file": "firmware/RickyOS-Plus-1.2.20-r2.bin",
       "bytes": 6009968,
-      "sha256": "b4cbf2832062c48d155042e8b2f70d7575f9d79760ac75deb4aabdc1d91eae91",
+      "sha256": "5e856e72363c2f55912945bc866a8591b225114d20cd1f2aad4d30546827c86f",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
