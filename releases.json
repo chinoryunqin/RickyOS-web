@@ -50,16 +50,16 @@
       ]
     },
     {
-      "version": "1.2.20",
+      "version": "1.2.21",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.20.bin",
+      "file": "firmware/RickyOS-Plus-1.2.21.bin",
       "bytes": 6009968,
-      "sha256": "7f038063c2f717c9dd5f14212c78fb4ff17e2226f90c2fcf08b2f4bf6e35960a",
+      "sha256": "b4cbf2832062c48d155042e8b2f70d7575f9d79760ac75deb4aabdc1d91eae91",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -73,8 +73,8 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "新增阅读划线，长按正文选中文字即可添加",
-        "可在阅读菜单查看划线并跳回原文",
+        "修复系统版本显示错误和重复更新提示",
+        "新增阅读划线，可从阅读菜单查看和跳回原文",
         "优化夜间阅读的黑底、残影和图片显示",
         "修复触屏后改用按键翻页时旧页多刷一次"
       ]
