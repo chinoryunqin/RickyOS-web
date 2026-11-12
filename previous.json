@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.19",
+      "version": "1.2.20",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.19.bin",
-      "bytes": 5351104,
-      "sha256": "292eadd76f7bc07a5e44808429a6b0c2605c16308f632c916099edc1d39b791c",
+      "file": "firmware/RickyOS-1.2.20.bin",
+      "bytes": 5362512,
+      "sha256": "ba61b3f93134d104ff0377a9f6753b684e8168a3ce2996fbf8ecd60b1453faf9",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,24 +45,21 @@
         ]
       },
       "notes": [
-        "EPUB、TXT 和 Markdown 新增竖排阅读",
-        "修复竖排阅读的辅助线位置",
-        "词典支持离线查看和管理",
-        "修复阅读历史读取失败，保护已有记录",
-        "优化存储列表滚动条"
+        "新增阅读划线，长按正文选中文字即可添加",
+        "可在阅读菜单查看划线并跳回原文"
       ]
     },
     {
-      "version": "1.2.19",
+      "version": "1.2.20",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.19.bin",
-      "bytes": 5998576,
-      "sha256": "99e5c2b468ea74375a48690f636e0712b43c3aa466694cd0b9f92c813d45dcd3",
+      "file": "firmware/RickyOS-Plus-1.2.20-r2.bin",
+      "bytes": 6009968,
+      "sha256": "5e856e72363c2f55912945bc866a8591b225114d20cd1f2aad4d30546827c86f",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -76,12 +73,10 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "EPUB、TXT 和 Markdown 新增竖排阅读",
-        "修复竖排阅读的辅助线位置",
-        "词典支持离线查看和管理",
-        "修复阅读历史读取失败，保护已有记录",
-        "优化存储列表滚动条",
-        "支持按键绑定上一章或下一章"
+        "修复系统版本显示错误和重复更新提示",
+        "新增阅读划线，可从阅读菜单查看和跳回原文",
+        "优化夜间阅读的黑底、残影和图片显示",
+        "修复触屏后改用按键翻页时旧页多刷一次"
       ]
     },
     {
