@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.21",
+      "version": "1.2.23",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.21.bin",
-      "bytes": 5364080,
-      "sha256": "62fefaf0bbc9d2f4647da7c99f63ecc85a1a8bb640b403ed630dd00ec5b3475b",
+      "file": "firmware/RickyOS-1.2.23.bin",
+      "bytes": 5365232,
+      "sha256": "9936ba6049302b6c6d3661d3dfbaee9a5b77f4fe04fc50a01117b8e0f299babb",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,8 +45,8 @@
         ]
       },
       "notes": [
-        "修复待机壁纸选择铺满后，锁屏显示与预览不一致。",
-        "改善待机壁纸灰阶，减轻进入待机时的残影。"
+        "阅读时长按正文，可选择划线或查词。",
+        "查词自动去掉词首和词尾的标点，并支持英文连字符词。"
       ]
     },
     {
