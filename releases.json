@@ -50,16 +50,16 @@
       ]
     },
     {
-      "version": "1.2.22",
+      "version": "1.2.23",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.22.bin",
-      "bytes": 5862032,
-      "sha256": "59d2e1bd99a7501d847f2e0cacd74d18cdd0acb2176952e7c19afc2907dd000e",
+      "file": "firmware/RickyOS-Plus-1.2.23.bin",
+      "bytes": 5865488,
+      "sha256": "a5f09314728ddef50c6f866c6eecda78f81b19ba5560ba62d23d6a25b2c747b1",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -73,18 +73,17 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "新增 PDF 阅读，支持缩放、亮度和对比度调节、书签和续读。",
-        "在线升级后，首次打开 PDF 时可按需下载阅读资源。",
-        "控制中心内，侧边键调亮度，下方键调冷暖。"
+        "阅读时长按正文，可选择划线或查词。",
+        "查词自动去掉词首和词尾的标点，并支持英文连字符词。"
       ],
       "pdfAssets": {
         "offset": 13172736,
-        "file": "firmware/RickyOS-Plus-1.2.22-pdf-assets.bin",
+        "file": "firmware/RickyOS-Plus-1.2.23-pdf-assets.bin",
         "bytes": 2053810,
         "sha256": "f72d6a319c4b8760258725791e04af7aa1b038acf8231a55867c39e0bc7b1f69"
       },
       "pdfDownload": {
-        "file": "firmware/RickyOS-Plus-1.2.22-pdf-only.bin",
+        "file": "firmware/RickyOS-Plus-1.2.23-pdf-only.bin",
         "bytes": 878258,
         "sha256": "3449052e38d426d341cfe72277f9b79374dac10e3cca33385c02aa2837e57e37"
       }
