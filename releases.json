@@ -63,8 +63,8 @@
       "chipId": 32,
       "flashBytes": 16777216,
       "file": "firmware/RickyOS-Plus-1.2.27.bin",
-      "bytes": 5887520,
-      "sha256": "dc8924e7f60748b7d30f4cff9391c546ecc1bb5e16d62194ec8984d08c0693cf",
+      "bytes": 5890416,
+      "sha256": "185ba875eb624a82379b6a6443f4cf4b07673df3df3a1115bed99bf7409fdb64",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -83,7 +83,8 @@
         "EPUB 段首缩进遵循排版设置，自动模式保留原书样式。",
         "阅读页书签支持再次点击取消。",
         "统一阅读页与系统页眉的电池样式和百分比位置。",
-        "优化 PIN 输入键盘的刷新与触摸响应。"
+        "优化 PIN 输入键盘的刷新与触摸响应。",
+        "修复旧版本在线升级兼容性，自动恢复匹配的字体与 PDF 资源。"
       ],
       "pdfAssets": {
         "offset": 13172736,
