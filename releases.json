@@ -3,16 +3,16 @@
   "product": "RickyOS",
   "releases": [
     {
-      "version": "1.2.27",
+      "version": "1.2.28",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "readpico",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-1.2.27.bin",
-      "bytes": 5374976,
-      "sha256": "487421bf420e9103be12e5ac42cf10abf69813bef3e3305f3b311577c1111c6d",
+      "file": "firmware/RickyOS-1.2.28.bin",
+      "bytes": 5378016,
+      "sha256": "1209c6aac6b966bef83f96a175970033ecde7feaf844cb3b23fdc8c8a5b33a96",
       "fullInstall": {
         "approved": true,
         "hardwareAccepted": true,
@@ -45,26 +45,24 @@
         ]
       },
       "notes": [
-        "新增待机数字 PIN，支持修改和关闭。",
-        "阅读图片支持拉伸适配，透明待机画面可使用 PIN 解锁。",
-        "EPUB 段首缩进遵循排版设置，自动模式保留原书样式。",
-        "阅读页书签支持再次点击取消。",
-        "统一阅读页与系统页眉的电池样式和百分比位置。",
-        "优化 PIN 输入键盘的刷新与触摸响应。",
-        "手势设置恢复晃动、敲击翻页及灵敏度选项。"
+        "锁屏 PIN 支持四位或六位，兼容已有密码，优化多位密码输入流畅度。",
+        "按键绑定支持书库上一页、下一页。",
+        "书籍封面待机新增书页叠层书签版式。",
+        "现有阅读线适度加深，保持原有样式和设置。",
+        "关于本机显示芯片型号和当前电池电压。"
       ]
     },
     {
-      "version": "1.2.27",
+      "version": "1.2.28",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.27.bin",
-      "bytes": 5890416,
-      "sha256": "185ba875eb624a82379b6a6443f4cf4b07673df3df3a1115bed99bf7409fdb64",
+      "file": "firmware/RickyOS-Plus-1.2.28.bin",
+      "bytes": 5896640,
+      "sha256": "797ce7d895b9c31cf735f6beac727ffcad4c98faa84104a324450e5f01a2cfd0",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -78,24 +76,23 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "新增待机数字 PIN，支持修改和关闭。",
-        "阅读图片支持拉伸适配，透明待机画面可使用 PIN 解锁。",
-        "EPUB 段首缩进遵循排版设置，自动模式保留原书样式。",
-        "阅读页书签支持再次点击取消。",
-        "统一阅读页与系统页眉的电池样式和百分比位置。",
-        "优化 PIN 输入键盘的刷新与触摸响应。",
-        "修复旧版本在线升级兼容性，自动恢复匹配的字体与 PDF 资源。"
+        "锁屏 PIN 支持四位或六位，兼容已有密码，优化多位密码输入流畅度。",
+        "按键绑定支持书库上一页、下一页。",
+        "书籍封面待机新增书页叠层书签版式。",
+        "现有阅读线适度加深，保持原有样式和设置。",
+        "关于本机显示芯片型号和当前电池电压。",
+        "Plus 支持震动强度调节，修复在线升级资源匹配与旧版本兼容问题。"
       ],
       "pdfAssets": {
         "offset": 13172736,
-        "file": "firmware/RickyOS-Plus-1.2.27-pdf-assets.bin",
-        "bytes": 2622214,
-        "sha256": "6c0bc252102b1dd8151451532e849f4a4cee573547fd0c942f3a611ff9a6a321"
+        "file": "firmware/RickyOS-Plus-1.2.28-pdf-assets.bin",
+        "bytes": 2624614,
+        "sha256": "12d56dbdbcd609a45ecab62e21a90ed1c75b223c445dad9a64f4f2bc07f90b89"
       },
       "pdfDownload": {
-        "file": "firmware/RickyOS-Plus-1.2.27-pdf-only.bin",
-        "bytes": 878258,
-        "sha256": "3449052e38d426d341cfe72277f9b79374dac10e3cca33385c02aa2837e57e37"
+        "file": "firmware/RickyOS-Plus-1.2.28-pdf-only.bin",
+        "bytes": 1449062,
+        "sha256": "6334f96e860b3f9de77f36061dd0d2acd6463af6b9873cf51a12ec33b9727c16"
       }
     },
     {
@@ -118,21 +115,21 @@
           {
             "role": "bootloader",
             "offset": 0,
-            "file": "firmware/RickyOS-EEGO-A4-1.2.5-bootloader.bin",
+            "file": "firmware/RickyOS-1.2.2-bootloader.bin",
             "bytes": 18720,
             "sha256": "15f88ae11793eddc5b7e1f770fba54b10a6f59809c14d7c51cfbf0db8d2fa3ca"
           },
           {
             "role": "partitions",
             "offset": 32768,
-            "file": "firmware/RickyOS-EEGO-A4-1.2.5-partitions.bin",
+            "file": "firmware/RickyOS-1.2.2-partitions.bin",
             "bytes": 3072,
             "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
           },
           {
             "role": "boot_app0",
             "offset": 57344,
-            "file": "firmware/RickyOS-EEGO-A4-1.2.5-boot_app0.bin",
+            "file": "firmware/RickyOS-1.2.2-boot_app0.bin",
             "bytes": 8192,
             "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
           }
