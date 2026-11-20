@@ -53,16 +53,16 @@
       ]
     },
     {
-      "version": "1.2.28",
+      "version": "1.2.29",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "plus-install",
       "board": "metalio-plus-s31",
       "chipId": 32,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-Plus-1.2.28.bin",
-      "bytes": 5896640,
-      "sha256": "797ce7d895b9c31cf735f6beac727ffcad4c98faa84104a324450e5f01a2cfd0",
+      "file": "firmware/RickyOS-Plus-1.2.29.bin",
+      "bytes": 5897504,
+      "sha256": "29735aa8e59956bb5392d96c595b47adfc147230650e2bb703257cb86cf27a7c",
       "bootloader": {
         "offset": 8192,
         "file": "firmware/RickyOS-Plus-1.2.3-bootloader.bin",
@@ -76,21 +76,17 @@
         "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
       },
       "notes": [
-        "锁屏 PIN 支持四位或六位，兼容已有密码，优化多位密码输入流畅度。",
-        "按键绑定支持书库上一页、下一页。",
-        "书籍封面待机新增书页叠层书签版式。",
-        "现有阅读线适度加深，保持原有样式和设置。",
-        "关于本机显示芯片型号和当前电池电压。",
-        "Plus 支持震动强度调节，修复在线升级资源匹配与旧版本兼容问题。"
+        "开机自动检查系统资源，缺失时提示下载。",
+        "系统更新可重新下载缺失资源，恢复书库书名和中文界面。"
       ],
       "pdfAssets": {
         "offset": 13172736,
-        "file": "firmware/RickyOS-Plus-1.2.28-pdf-assets.bin",
+        "file": "firmware/RickyOS-Plus-1.2.29-pdf-assets.bin",
         "bytes": 2624614,
         "sha256": "12d56dbdbcd609a45ecab62e21a90ed1c75b223c445dad9a64f4f2bc07f90b89"
       },
       "pdfDownload": {
-        "file": "firmware/RickyOS-Plus-1.2.28-pdf-only.bin",
+        "file": "firmware/RickyOS-Plus-1.2.29-pdf-only.bin",
         "bytes": 1449062,
         "sha256": "6334f96e860b3f9de77f36061dd0d2acd6463af6b9873cf51a12ec33b9727c16"
       }
