@@ -142,20 +142,21 @@
       ]
     },
     {
-      "version": "1.2.25",
+      "version": "1.2.30",
       "approved": true,
       "hardwareAccepted": true,
       "mode": "auto-install",
       "board": "metalio_eink4",
       "chipId": 9,
       "flashBytes": 16777216,
-      "file": "firmware/RickyOS-metalio-eink4-1.2.25.bin",
-      "bytes": 6005040,
-      "sha256": "8ef5cfab9a700cce429a1ade1a45504e3b79d810df2ae7ae13aab2c6e35c3fcd",
+      "file": "firmware/RickyOS-metalio-eink4-1.2.30.bin",
+      "bytes": 6017424,
+      "sha256": "c71dd38273612890d1ffe3fee7858a1114a1527f1a2ebf7c538f65a9f4531056",
       "notes": [
-        "逐键设置短按和长按，与 Plus 共用按键菜单。",
-        "Home 支持双击，翻页键可设置章节跳转。",
-        "触控震动和侧键震动可独立开关。"
+        "EPUB 注解支持弹注和页下注，默认弹注，可在阅读菜单切换。",
+        "优化微信读书导出的目录与注解，兼容更多 EPUB 脚注。",
+        "修复部分 EPUB 段落的额外空白。",
+        "状态栏选「章节名」时直接显示当前章节。"
       ],
       "fullInstall": {
         "approved": true,
